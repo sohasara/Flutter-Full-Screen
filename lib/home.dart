@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -9,7 +10,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue[200],
         centerTitle: true,
-        title: const Text('Display MOdes'),
+        title: const Text('Display Modes'),
       ),
       body: Center(
         child: Column(
@@ -20,7 +21,11 @@ class HomePage extends StatelessWidget {
                 backgroundColor: Colors.pink,
                 padding: const EdgeInsets.all(22),
               ),
-              onPressed: () {},
+              onPressed: () {
+                // Enter full-screen mode
+                SystemChrome.setEnabledSystemUIMode(
+                    SystemUiMode.immersiveSticky);
+              },
               child: const Text(
                 '     GO FULL SCREEN    ',
                 style: TextStyle(
@@ -35,7 +40,10 @@ class HomePage extends StatelessWidget {
                 backgroundColor: Colors.blue,
                 padding: const EdgeInsets.all(22),
               ),
-              onPressed: () {},
+              onPressed: () {
+                // Exit full-screen
+                SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+              },
               child: const Text(
                 '   GO Regular Screen   ',
                 style: TextStyle(
@@ -50,7 +58,10 @@ class HomePage extends StatelessWidget {
                 backgroundColor: Colors.green,
                 padding: const EdgeInsets.all(22),
               ),
-              onPressed: () {},
+              onPressed: () {
+                // Hide the bottom navigation bar
+                SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack);
+              },
               child: const Text(
                 'Disappear Bottom Bar',
                 style: TextStyle(
@@ -65,7 +76,13 @@ class HomePage extends StatelessWidget {
                 backgroundColor: Colors.red,
                 padding: const EdgeInsets.all(22),
               ),
-              onPressed: () {},
+              onPressed: () {
+                // Hide only the status bar
+                SystemChrome.setEnabledSystemUIMode(
+                  SystemUiMode.manual,
+                  overlays: [SystemUiOverlay.bottom],
+                );
+              },
               child: const Text(
                 'Disappear Status Bar',
                 style: TextStyle(
