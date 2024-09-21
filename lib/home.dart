@@ -11,6 +11,28 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
         title: const Text('Display MOdes'),
       ),
+      body: IntrinsicWidth(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.amber,
+                padding: const EdgeInsets.all(22),
+              ),
+              onPressed: () {},
+              child: const Text(
+                'GO FULL SCREEN',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
