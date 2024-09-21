@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
               ),
               onPressed: () {},
               child: const Text(
-                'GO FULL SCREEN',
+                '     GO FULL SCREEN    ',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
               ),
               onPressed: () {},
               child: const Text(
-                'GO FULL SCREEN',
+                '   GO Regular Screen   ',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
               ),
               onPressed: () {},
               child: const Text(
-                'GO FULL SCREEN',
+                'Disappear Bottom Bar',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -64,7 +64,7 @@ class HomePage extends StatelessWidget {
               ),
               onPressed: () {},
               child: const Text(
-                'GO FULL SCREEN',
+                'Disappear Status Bar',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
