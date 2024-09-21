@@ -24,7 +24,9 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 // Enter full-screen mode
                 SystemChrome.setEnabledSystemUIMode(
-                    SystemUiMode.immersiveSticky);
+                  SystemUiMode.manual,
+                  overlays: [],
+                );
               },
               child: const Text(
                 '     GO FULL SCREEN    ',
@@ -42,7 +44,10 @@ class HomePage extends StatelessWidget {
               ),
               onPressed: () {
                 // Exit full-screen
-                SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+                SystemChrome.setEnabledSystemUIMode(
+                  SystemUiMode.manual,
+                  overlays: SystemUiOverlay.values,
+                );
               },
               child: const Text(
                 '   GO Regular Screen   ',
@@ -60,7 +65,10 @@ class HomePage extends StatelessWidget {
               ),
               onPressed: () {
                 // Hide the bottom navigation bar
-                SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack);
+                SystemChrome.setEnabledSystemUIMode(
+                  SystemUiMode.manual,
+                  overlays: [SystemUiOverlay.top],
+                );
               },
               child: const Text(
                 'Disappear Bottom Bar',
