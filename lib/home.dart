@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
           children: [
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.amber,
+                backgroundColor: Colors.pink,
                 padding: const EdgeInsets.all(22),
               ),
               onPressed: () {},
@@ -26,12 +26,13 @@ class HomePage extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
               ),
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.amber,
+                backgroundColor: Colors.blue,
                 padding: const EdgeInsets.all(22),
               ),
               onPressed: () {},
@@ -40,12 +41,13 @@ class HomePage extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
               ),
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.amber,
+                backgroundColor: Colors.green,
                 padding: const EdgeInsets.all(22),
               ),
               onPressed: () {},
@@ -54,12 +56,13 @@ class HomePage extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
               ),
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.amber,
+                backgroundColor: Colors.red,
                 padding: const EdgeInsets.all(22),
               ),
               onPressed: () {},
@@ -68,6 +71,7 @@ class HomePage extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
+                  color: Colors.white,
                 ),
               ),
             ),
