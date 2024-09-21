@@ -7,6 +7,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue[200],
         centerTitle: true,
         title: const Text('Display MOdes'),
       ),
